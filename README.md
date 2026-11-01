@@ -560,5 +560,9 @@ docker stats --no-stream mission1-web-container
 
 결과: docker stats 명령어로 컨테이너의 CPU와 메모리 사용량을 확인하였다.
 
+## VS Code Git 연동 증거
 
+VS Code에서 Git 확장을 활성화하고 Mission1-Web 저장소를 인식한 것을 확인했습니다.
+
+![VS Code Git 연동 화면](screenshots/vscode-git-2.png)
 
