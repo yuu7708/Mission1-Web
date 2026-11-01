@@ -566,3 +566,45 @@ VS Code에서 Git 확장을 활성화하고 Mission1-Web 저장소를 인식한 
 
 ![VS Code Git 연동 화면](screenshots/vscode-git-2.png)
 
+## 파일 및 폴더 관리 실습 결과
+
+### PowerShell (Windows)
+
+실습 경로: `C:\Users\User\Mission1-Practice`
+
+- `Get-Location` : 현재 위치 확인
+- `Get-ChildItem -Force` : 숨김 파일을 포함한 목록 확인
+- `Get-Content sample.txt` : 파일 내용 확인
+- `Copy-Item` : 파일 복사
+- `Rename-Item` : 파일 이름 변경
+- `Move-Item` : 파일 이동
+- `New-Item -ItemType Directory` : 폴더 생성
+- `New-Item -ItemType File` : 빈 파일 생성
+- `Remove-Item` : 파일 삭제
+- 파일의 `Hidden` 속성을 설정하고 `-Force`로 확인
+
+### Ubuntu (WSL)
+
+실습 경로: `/home/user/mission1-practice`
+
+- `pwd` : 현재 위치 확인
+- `ls -la` : 숨김 파일을 포함한 목록 확인
+- `cat sample.txt` : 파일 내용 확인
+- `cp` : 파일 복사
+- `mv` : 파일 이름 변경 및 이동
+- `touch` : 빈 파일 생성
+- `rm` : 파일 삭제
+- `chmod 600 sample.txt` : 파일 권한 설정
+- `chmod 700 sample-folder` : 폴더 권한 설정
+- `chmod 644 sample.txt` : 파일 권한 변경 및 확인
+- `chmod 755 sample-folder` : 폴더 권한 변경 및 확인
+
+### 권한 확인 결과
+
+| 대상 | 권한 | 의미 |
+|---|---|---|
+| sample.txt | 600 | 소유자만 읽기·쓰기 |
+| sample-folder | 700 | 소유자만 읽기·쓰기·실행 |
+| sample.txt | 644 | 소유자는 읽기·쓰기, 나머지는 읽기 |
+| sample-folder | 755 | 소유자는 전체 권한, 나머지는 읽기·실행 |
+
