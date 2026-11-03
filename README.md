@@ -672,7 +672,7 @@ Git은 변경 이력을 관리하고, GitHub는 저장소를 온라인으로 공
 ```dockerfile
 FROM nginx:alpine
 COPY index.html /usr/share/nginx/html/index.html
-</>
+```
 
 ## Docker 실습 실행 결과
 
