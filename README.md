@@ -196,7 +196,7 @@ Volume persistence test!
 
 \- 검증: 새 컨테이너에서 기존 파일의 내용을 다시 확인.
 
-![Docker Volume 데이터 영속성](https://github.com/yuu7708/Mission1-Web/raw/main/screenshots/docker-volume-persistence.png)
+![Docker Volume 데이터 영속성](screenshots/docker-volume-persistence.png)
 
 \## 8. Bind Mount와 Volume의 차이
 
