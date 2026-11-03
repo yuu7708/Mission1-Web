@@ -83,12 +83,11 @@ docker ps -a
 docker images
 
 
+docker logs mission1-web-container
 
- docker logs mission1-ubuntu
+docker inspect mission1-web-container
 
-docker inspect mission1-ubuntu
-
-docker stats --no-stream mission1-ubuntu
+docker stats --no-stream mission1-web-container
 
 docker start mission1-ubuntu
 
