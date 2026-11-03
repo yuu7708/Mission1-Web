@@ -84,7 +84,7 @@ docker images
 
 
 
-docker logs mission1-ubuntu
+ docker logs mission1-ubuntu
 
 docker inspect mission1-ubuntu
 
@@ -120,7 +120,7 @@ http://127.0.0.1:18881/
 
 
 
-결과: Hello, Docker! 웹페이지 표시 성공.
+결과: Bind Mount Success! 웹페이지 표시 성공.
 
 
 
@@ -130,7 +130,7 @@ http://127.0.0.1:18881/
 
 \- 커스텀 작업: 직접 작성한 index.html을 Nginx 웹 서버에 복사
 
-\- 목적: 기본 Nginx 페이지 대신 내가 만든 웹페이지를 표시.
+\- 목적: 기본 Nginx 페이지 대신 직접 작성한 웹페이지를 표시.
 
 
 
@@ -166,7 +166,7 @@ http://127.0.0.1:18882/
 
 docker volume create mission1-data
 
-docker run --name mission1-volume-first -v mission1-data:/data ubuntu:24.04 bash -c "echo 'Volume persistence test!' > /data/volume-test.txt \&\& cat /data/volume-test.txt"
+docker run --name mission1-volume-first -v mission1-data:/data ubuntu:24.04 bash -c "echo 'Volume persistence test!' > /data/volume-test.txt && cat /data/volume-test.txt"
 
 docker rm mission1-volume-first
 
@@ -214,7 +214,7 @@ Volume: Docker가 관리하는 저장 공간으로, 컨테이너를 삭제해도
 
 \### 문제 1: Windows 경로를 Bind Mount에 연결할 때 오류 발생
 
-\- 원인 추측: Windows 경로를 Docker가 인식하는 과정에서 경로 형식에 문제가 발생한 것으로 추측
+\- 원인 추측: Windows 경로를 Docker가 전달하는 과정에서 경로 형식에 문제가 발생한 것으로 추측
 
 \- 확인 방법: 경로를 확인하고 Docker 실행 결과를 확인
 
@@ -468,7 +468,7 @@ docker ps -a
 
 \- hello-world: 정상 종료 (Exit 0)
 
-
+\- welcome-to-docker: 종료 상태
 
 결과: 컨테이너의 실행 및 종료 상태와 포트 연결을 확인하였다.
 
@@ -511,7 +511,6 @@ docker images
 실행 명령어:
 
 docker logs mission1-web-container
-
 
 
 확인 결과:
