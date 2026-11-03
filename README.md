@@ -674,20 +674,24 @@ FROM nginx:alpine
 COPY index.html /usr/share/nginx/html/index.html
 
 ## Docker 실습 실행 결과
-1. Docker 기본 이미지 실행
+
+### 1. Docker 기본 이미지 실행
 
 hello-world 이미지를 실행하여 Docker 설치와 컨테이너 실행이 정상적으로 작동하는 것을 확인했다.
 
+![Docker Hello World 실행 결과](docker-hello-world.png)
 
 
-2. Docker 이미지 빌드
+### 2. Docker 이미지 빌드
 
 Dockerfile을 이용하여 Nginx 기반의 mission1-web 이미지를 생성했다.
 
+![Docker 이미지 빌드 결과](docker-build.png)
 
-
-3. 웹페이지 실행 결과
+### 3. 웹페이지 실행 결과
 
 컨테이너의 80번 포트를 호스트의 18881번 포트와 연결하고 브라우저에서 웹페이지가 정상적으로 표시되는 것을 확인했다.
 
 접속 주소: http://127.0.0.1:18881/
+
+![Docker 웹페이지 실행 결과](docker-webpage.png)
