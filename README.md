@@ -667,3 +667,10 @@ Git은 변경 이력을 관리하고, GitHub는 저장소를 온라인으로 공
 
 이번 실습에서는 Git으로 프로젝트 변경 사항을 관리하고 GitHub 저장소에 README.md와 프로젝트 파일을 업로드했다.
 
+### Dockerfile 코드
+
+```dockerfile
+FROM nginx:alpine
+COPY index.html /usr/share/nginx/html/index.html
+
+
