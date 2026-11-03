@@ -247,27 +247,22 @@ Volume persistence test!
 Docker Volume은 컨테이너를 삭제해도 데이터가 유지되지만, 데이터 손상이나 실수로 인한 삭제에 대비해 별도로 백업하는 것이 좋다.
 
 #### 1. Volume 백업의 필요성
-
 - 컨테이너를 삭제해도 Volume에 저장된 데이터는 유지된다.
 - 하지만 Volume 자체를 삭제하거나 데이터가 손상되면 복구하기 어려울 수 있다.
 - 중요한 데이터는 별도의 백업 파일로 보관해야 한다.
 
 #### 2. Volume 백업 방법
-
 다음 명령어는 `mission1-data` Volume의 내용을 압축 파일로 백업하는 예시이다.
-
-```powershell
 docker run --rm -v mission1-data:/source:ro -v "${PWD}:/backup" ubuntu:24.04 tar -czf /backup/mission1-data-backup.tar.gz -C /source .
 
-백업 파일 이름: mission1-data-backup.tar.gz
-
+백업 파일 이름: `mission1-data-backup.tar.gz`
 백업 파일은 현재 PowerShell 작업 폴더에 생성된다.
-3. 데이터 보호 방법
+
+#### 3. 데이터 보호 방법
 - 중요한 Volume 데이터는 정기적으로 백업한다.
 - 백업 파일은 원본 Volume과 다른 안전한 위치에도 보관한다.
 - 데이터 복구가 필요한 경우 백업 파일을 이용해 Volume에 데이터를 복원할 수 있다.
 위 명령어는 백업 방법을 설명하기 위한 예시이며, 실제 백업을 수행했다는 의미는 아니다.
-
 
 \## 8. Bind Mount와 Volume의 차이
 
