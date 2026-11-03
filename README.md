@@ -242,7 +242,7 @@ Volume: Docker가 관리하는 저장 공간으로, 컨테이너를 삭제해도
 
 \### 웹페이지 실행 결과
 
-!\[웹페이지 실행 화면](screenshots/mission1-web.png)
+![웹페이지 실행 화면](https://raw.githubusercontent.com/yuu7708/Mission1-Web/main/screenshots/mission1-web.png)
 
 
 
