@@ -95,6 +95,11 @@ docker exec mission1-ubuntu cat /mission1-test/container-test.txt
 
 docker stop mission1-ubuntu
 
+### attach와 exec의 차이
+
+- **attach**: 실행 중인 컨테이너의 주 프로세스에 연결한다.
+- **exec**: 실행 중인 컨테이너 내부에서 새로운 명령어를 실행한다.
+
 docker --version
 
 docker info 
