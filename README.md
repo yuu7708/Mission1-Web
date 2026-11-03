@@ -205,6 +205,10 @@ Bind Mount: 내 컴퓨터의 특정 파일이나 폴더를 컨테이너와 연�
 
 Volume: Docker가 관리하는 저장 공간으로, 컨테이너를 삭제해도 데이터가 유지된다.
 
+\- Bind Mount 실습 경로: 호스트의 index.html → 컨테이너의 /usr/share/nginx/html/index.html
+
+\- Volume 실습 이름: mission1-data → 컨테이너의 /data
+
 ### Docker 이미지와 컨테이너의 차이
 
 - **이미지(Image)**: 컨테이너를 생성하기 위한 실행 환경과 파일이 담긴 읽기 전용 템플릿이다.
@@ -219,12 +223,6 @@ Volume: Docker가 관리하는 저장 공간으로, 컨테이너를 삭제해도
 5. 컨테이너를 삭제해도 원본 이미지는 별도로 삭제하지 않는 한 남아 있다.
 
 즉, 이미지는 컨테이너를 만들기 위한 설계도와 같고, 컨테이너는 그 이미지를 바탕으로 실행되는 실제 환경이다.
-
-\- Bind Mount 실습 경로: 호스트의 index.html → 컨테이너의 /usr/share/nginx/html/index.html
-
-\- Volume 실습 이름: mission1-data → 컨테이너의 /data
-
-
 
 \## 9. 문제 해결 기록
 
