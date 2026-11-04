@@ -661,9 +661,16 @@ docker stats --no-stream mission1-web-container
 
 \- 실행 중인 프로세스: 9개
 
-
-
 결과: docker stats 명령어로 컨테이너의 CPU와 메모리 사용량을 확인하였다.
+
+### GitHub 커밋 기록 확인
+
+GitHub 저장소의 커밋 기록 페이지에서 파일 업로드 및 수정 내역을 확인했다.
+
+- 저장소: https://github.com/yuu7708/Mission1-Web
+- 커밋 기록: https://github.com/yuu7708/Mission1-Web/commits/main/
+
+GitHub 웹사이트를 이용해 파일을 업로드하고 수정한 기록을 확인했다.
 
 ## VS Code Git 연동 증거
 
