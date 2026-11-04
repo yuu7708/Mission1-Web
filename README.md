@@ -1,8 +1,8 @@
-\# Mission 1 - Docker 개발 환경 구축 및 실습
+# Mission 1 - Docker 개발 환경 구축 및 실습
 
 
 
-\## 1. 실습 목표
+## 1. 실습 목표
 
 \- 개발 도구 설치 및 버전 확인
 
@@ -16,7 +16,7 @@
 
 
 
-\## 2. 개발 환경
+## 2. 개발 환경
 
 
 
@@ -42,7 +42,7 @@
 
 
 
-\## 3. 실습 결과
+## 3. 실습 결과
 
 \- Docker Hello World 실행 성공
 
@@ -54,7 +54,7 @@
 
 \- Volume 데이터 영속성 확인 성공
 
-\### 미션 수행 체크리스트
+### 미션 수행 체크리스트
 
 \- \[x] Docker 및 Ubuntu 컨테이너 실습
 
@@ -70,7 +70,7 @@
 
 
 
-\## 4. Docker 기본 명령어
+## 4. Docker 기본 명령어
 
 ```bash
 
@@ -108,7 +108,7 @@ docker info
 
 
 
-\## 5. 웹페이지 Docker 실습
+## 5. 웹페이지 Docker 실습
 
 이미지 빌드 명령어:
 
@@ -128,7 +128,7 @@ http://127.0.0.1:18881/
 
 
 
-\### 커스텀 이미지 설명
+### 커스텀 이미지 설명
 
 \- 베이스 이미지: nginx:alpine
 
@@ -182,7 +182,7 @@ Docker 컨테이너가 포트를 사용 중인지 확인한다.
     docker run -d --name mission1-web-container-18882 -p 18882:80 mission1-web
 
     
-\## 6. Bind Mount 실습
+## 6. Bind Mount 실습
 
 호스트 파일을 컨테이너 내부에 연결하는 명령어:
 
@@ -200,7 +200,7 @@ http://127.0.0.1:18882/
 
 
 
-\### Bind Mount 변경 확인
+### Bind Mount 변경 확인
 
 \- 호스트의 index.html 파일을 수정하기 전 브라우저 화면을 확인
 
@@ -210,7 +210,7 @@ http://127.0.0.1:18882/
 
 
 
-\## 7. Docker Volume 실습
+## 7. Docker Volume 실습
 
 docker volume create mission1-data
 
@@ -230,7 +230,7 @@ Volume persistence test!
 
 
 
-\### Volume 실습 설명
+### Volume 실습 설명
 
 \- Volume 이름: mission1-data
 
@@ -289,11 +289,11 @@ Volume: Docker가 관리하는 저장 공간으로, 컨테이너를 삭제해도
 
 즉, 이미지는 컨테이너를 만들기 위한 설계도와 같고, 컨테이너는 그 이미지를 바탕으로 실행되는 실제 환경이다.
 
-\## 9. 문제 해결 기록
+## 9. 문제 해결 기록
 
 
 
-\### 문제 1: Windows 경로를 Bind Mount에 연결할 때 오류 발생
+### 문제 1: Windows 경로를 Bind Mount에 연결할 때 오류 발생
 
 \- 원인 추측: Windows 경로를 Docker가 전달하는 과정에서 경로 형식에 문제가 발생한 것으로 추측
 
@@ -303,7 +303,7 @@ Volume: Docker가 관리하는 저장 공간으로, 컨테이너를 삭제해도
 
 
 
-\### 문제 2: 브라우저 접속 로그에 favicon.ico 404 오류 표시
+### 문제 2: 브라우저 접속 로그에 favicon.ico 404 오류 표시
 
 \- 원인 추측: 웹페이지에 파비콘 파일이 없어서 발생한 것으로 추측
 
@@ -313,7 +313,7 @@ Volume: Docker가 관리하는 저장 공간으로, 컨테이너를 삭제해도
 
 
 
-\## 10. 스크린샷
+## 10. 스크린샷
 
 
 
@@ -327,7 +327,7 @@ Volume: Docker가 관리하는 저장 공간으로, 컨테이너를 삭제해도
 
 
 
-\## 11. 파일 및 폴더 권한 실습
+## 11. 파일 및 폴더 권한 실습
 
 
 
@@ -339,7 +339,7 @@ Volume: Docker가 관리하는 저장 공간으로, 컨테이너를 삭제해도
 
 
 
-\### 파일 권한 변경
+### 파일 권한 변경
 
 \- 대상 파일: sample.txt
 
@@ -349,7 +349,7 @@ Volume: Docker가 관리하는 저장 공간으로, 컨테이너를 삭제해도
 
 
 
-\### 폴더 권한 변경
+### 폴더 권한 변경
 
 \- 대상 폴더: sample-folder
 
@@ -387,7 +387,7 @@ Volume: Docker가 관리하는 저장 공간으로, 컨테이너를 삭제해도
 
 practice 폴더에 sample.txt가 남아 있지 않은 것을 확인했다.
 
-\### PowerShell
+### PowerShell
 
 \- 현재 위치 확인: pwd
 
@@ -409,7 +409,7 @@ practice 폴더에 sample.txt가 남아 있지 않은 것을 확인했다.
 
 
 
-\### Ubuntu Bash
+### Ubuntu Bash
 
 \- 현재 위치 확인: pwd
 
@@ -431,11 +431,11 @@ practice 폴더에 sample.txt가 남아 있지 않은 것을 확인했다.
 
 
 
-\## 13. Git 및 GitHub 실습
+## 13. Git 및 GitHub 실습
 
 
 
-\### Git 사용자 설정
+### Git 사용자 설정
 
 \- 사용자 이름: yuu7708
 
@@ -443,7 +443,7 @@ practice 폴더에 sample.txt가 남아 있지 않은 것을 확인했다.
 
 
 
-\### GitHub 저장소
+### GitHub 저장소
 
 \- 저장소 이름: Mission1-Web
 
@@ -451,26 +451,19 @@ practice 폴더에 sample.txt가 남아 있지 않은 것을 확인했다.
 
 \- 저장소 공개 여부: Public
 
+### Git 주요 작업
 
+- Git 저장소 초기화
+- README.md, index.html, Dockerfile 및 스크린샷 파일 정리
+- 변경 사항 커밋
+- 기본 브랜치를 main으로 설정
+- GitHub 원격 저장소 연결
+- GitHub 웹사이트에서 파일 업로드 및 수정
+- GitHub 커밋 기록 페이지에서 변경 내역 확인
 
-\### Git 주요 작업
+※ 로컬 환경에서 git push를 시도했으나 원격 저장소와의 이력 차이로 완료하지 못했다. 이후 GitHub 웹사이트를 통해 파일을 업로드하고 수정했다.
 
-\- Git 저장소 초기화
-
-\- README.md, index.html, Dockerfile, 스크린샷 추가
-
-\- 변경 사항 커밋
-
-\- 기본 브랜치를 main으로 변경
-
-\- GitHub 원격 저장소 주소 연결
-
-\-  GitHub 웹사이트에서 파일 업로드 및 관리
-
-※ 로컬 저장소에서 GitHub로 push를 시도했으나 오류가 발생하여, GitHub 웹사이트에서 파일을 관리했다.
-
-
-\### 주요 명령어
+### 주요 명령어
 
 ```bash
 
@@ -494,7 +487,7 @@ git push -u origin main
 
 
 
-\### Git 설정 확인 결과
+### Git 설정 확인 결과
 
 \- git config --list 명령어로 Git 설정 확인
 
@@ -508,7 +501,7 @@ git push -u origin main
 
 
 
-\### Docker 정보 확인 결과
+### Docker 정보 확인 결과
 
 
 
@@ -546,7 +539,7 @@ docker info
 
 ※ 컨테이너와 이미지 개수 등 실행 환경의 수치는 실습 당시 확인한 결과이며, 이후 실행 상태에 따라 달라질 수 있다.
 
-\### Docker 컨테이너 목록 확인 결과
+### Docker 컨테이너 목록 확인 결과
 
 
 
@@ -580,7 +573,7 @@ docker ps -a
 
 
 
-\### Docker 이미지 목록 확인 결과
+### Docker 이미지 목록 확인 결과
 
 
 
@@ -610,7 +603,7 @@ docker images
 
 
 
-\### Docker 컨테이너 로그 확인 결과
+### Docker 컨테이너 로그 확인 결과
 
 
 
@@ -637,7 +630,7 @@ docker logs mission1-web-container
 
 
 
-\### Docker 컨테이너 리소스 사용량 확인 결과
+### Docker 컨테이너 리소스 사용량 확인 결과
 
 
 
