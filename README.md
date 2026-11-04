@@ -357,11 +357,35 @@ Volume: Docker가 관리하는 저장 공간으로, 컨테이너를 삭제해도
 
 \- 결과: 소유자에게 읽기, 쓰기 및 실행 권한 부여
 
+### chmod 600 권한 변경 실습 결과
 
+1. 파일 생성: `touch sample.txt`
+2. 권한 변경: `chmod 600 sample.txt`
+3. 권한 확인: `ls -l sample.txt`
+
+실행 결과:
+
+`-rw------- 1 user user 0 Nov 4 08:56 sample.txt`
+
+소유자에게만 읽기와 쓰기 권한이 부여되고, 그룹과 기타 사용자에게는 권한이 없는 것을 확인했다.
 
 \## 12. 터미널 파일 및 폴더 관리 실습
 
+### 파일 생성, 이동 및 삭제 실습 결과
 
+1. `mkdir -p practice` 명령어로 practice 폴더 생성
+2. `mv sample.txt practice/` 명령어로 파일 이동
+3. `ls -l practice/` 명령어로 이동 결과 확인
+4. `rm practice/sample.txt` 명령어로 파일 삭제
+5. `ls -la practice/` 명령어로 삭제 결과 확인
+
+이동 결과:
+
+`-rw------- 1 user user 0 Nov 4 08:56 sample.txt`
+
+삭제 후 결과:
+
+practice 폴더에 sample.txt가 남아 있지 않은 것을 확인했다.
 
 \### PowerShell
 
