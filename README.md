@@ -462,27 +462,21 @@ practice 폴더에 sample.txt가 남아 있지 않은 것을 확인했다.
 
 ### 주요 명령어
 
+Git 저장소를 만들고 GitHub 원격 저장소와 연결할 때 사용하는 명령어이다.
+
 ```bash
-
 git init
-
 git config --global user.name "yuu7708"
-
 git config --global user.email "개인이메일은 비공개"
-
 git add .
-
 git commit -m "Complete Mission 1 Docker practice"
-
 git branch -M main
-
 git remote add origin https://github.com/yuu7708/Mission1-Web.git
-
 git push -u origin main
-
 ```
 
-
+- 이메일 주소는 개인정보 보호를 위해 공개하지 않았다.
+- git push -u origin main 명령어를 실행했으나 원격 저장소와 로컬 저장소의 이력 차이로 업로드가 완료되지 않았다. 이후 GitHub 웹사이트에서 파일을 업로드하고 수정했다.
 
 ### Git 설정 확인 결과
 
