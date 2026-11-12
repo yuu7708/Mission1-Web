@@ -815,5 +815,4 @@ git status
 - 작업 트리 상태 확인
 
 **연동 확인 화면**
-
-실제 실행 결과 스크린샷 첨부
+![GitHub 및 VS Code 연동 확인](screenshots/github-vscode-connection.png)
