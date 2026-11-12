@@ -793,3 +793,27 @@ Dockerfile을 이용하여 Nginx 기반의 mission1-web 이미지를 생성했�
 접속 주소: http://127.0.0.1:18881/
 
 ![Docker 웹페이지 실행 결과](docker-webpage.png)
+
+##  GitHub 저장소 복제 및 VS Code 연동 확인
+
+새 컴퓨터에서도 GitHub 저장소를 정상적으로 복제하고 VS Code와 연결할 수 있는지 확인했습니다.
+
+**확인한 명령어**
+
+```powershell
+git clone https://github.com/yuu7708/Mission1-Web.git
+cd Mission1-Web
+code .
+git status
+```
+
+**확인 결과**
+
+- GitHub 저장소 복제 성공
+- VS Code 실행 및 프로젝트 연결 확인
+- 원격 저장소(origin)와 main 브랜치 연결 확인
+- 작업 트리 상태 확인
+
+**연동 확인 화면**
+
+실제 실행 결과 스크린샷 첨부
